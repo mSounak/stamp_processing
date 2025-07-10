@@ -8,7 +8,7 @@ from pkg_resources import DistributionNotFound, get_distribution
 
 __version__ = None
 try:
-    __version__ = get_distribution("stamp_processing").version
+    __version__ = get_distribution("better_stamp_processing").version
 except DistributionNotFound:
     __version__ = "0.0.0"  # package is not installed
 

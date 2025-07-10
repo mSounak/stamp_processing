@@ -3,6 +3,7 @@
 ## [Unreleased] - 2024-12-XX
 
 ### Changed
+- **BREAKING**: Package name changed from `stamp_processing` to `better_stamp_processing`
 - **BREAKING**: Updated minimum Python version requirement from 3.7 to 3.8
 - Updated all dependencies to modern versions:
   - PyTorch: 1.8.1 → ≥2.0.0
@@ -15,6 +16,8 @@
   - gdown: (no version) → ≥4.7.1
 - Updated build system requirements in pyproject.toml
 - Added setuptools≥65.0.0 as explicit dependency for pkg_resources
+- Enhanced package description and documentation
+- Updated repository URLs to reflect new ownership
 
 ### Fixed
 - Fixed syntax error in setup.py (missing comma after Pillow dependency)
@@ -29,6 +32,19 @@
 - Added comprehensive development tools (pytest, black, isort, etc.)
 - Enhanced flake8 configuration with better exclusions
 - Added more detailed mypy configuration options
+- Added GitHub Actions workflows for automated testing and publishing
+- Enhanced .gitignore with comprehensive exclusions
+- Added usage examples in README
 
 ### Security
-- Updated all dependencies to address known security vulnerabilities in older versions 
+- Updated all dependencies to address known security vulnerabilities in older versions
+
+## Installation
+
+```bash
+# Old package (deprecated)
+pip install stamp_processing
+
+# New package (recommended)
+pip install better_stamp_processing
+``` 

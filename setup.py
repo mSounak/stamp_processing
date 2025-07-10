@@ -22,12 +22,12 @@ INSTALL_REQUIRES = [
     "setuptools>=65.0.0",  # for pkg_resources
 ]
 
-DISTNAME = "stamp_processing"
+DISTNAME = "better_stamp_processing"
 DESCRIPTION = "Stamp processing package"
 AUTHOR = "Sun* AI Research Team"
 EMAIL = "sun.converter.team@gmail.com"
-URL = "https://github.com/sun-asterisk-research/stamp_processing/"
-DOWNLOAD_URL = "https://github.com/sun-asterisk-research/stamp_processing/"
+URL = "https://github.com/mSounak/stamp_processing/"
+DOWNLOAD_URL = "https://github.com/mSounak/stamp_processing/"
 
 
 setup(
@@ -45,7 +45,7 @@ setup(
     long_description_content_type="text/markdown",
     url=URL,
     project_urls={
-        "Bug Tracker": "https://github.com/sun-asterisk-research/stamp_processing/issues",
+        "Bug Tracker": "https://github.com/mSounak/stamp_processing/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
