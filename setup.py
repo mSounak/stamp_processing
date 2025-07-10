@@ -7,20 +7,19 @@ import sys
 
 from setuptools import find_packages, setup
 
-assert sys.version_info >= (3, 7, 0), "stamp_processing requires Python 3.7+"
-
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 INSTALL_REQUIRES = [
-    "gdown",
-    "Pillow<=8.2.0"
-    "opencv-python>=4.1.2.30",
-    "torch==1.8.1",
-    "torchvision==0.9.1",
-    "fastai==2.3.1",
-    "numpy>=1.20",
-    "PyYAML==5.4.1",
+    "gdown>=4.7.1",
+    "Pillow>=10.0.0",
+    "opencv-python>=4.8.0",
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "fastai>=2.7.0",
+    "numpy>=1.21.0",
+    "PyYAML>=6.0",
+    "setuptools>=65.0.0",  # for pkg_resources
 ]
 
 DISTNAME = "stamp_processing"
@@ -50,10 +49,18 @@ setup(
     },
     classifiers=[
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Operating System :: OS Independent",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Topic :: Scientific/Engineering :: Image Processing",
     ],
     packages=find_packages(where=".", exclude=["tests"]),
     install_requires=INSTALL_REQUIRES,
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     include_package_data=True
 )

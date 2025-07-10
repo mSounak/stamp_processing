@@ -8,10 +8,9 @@ from pkg_resources import DistributionNotFound, get_distribution
 
 __version__ = None
 try:
-    __version__ = get_distribution("table_reconstruction").version
+    __version__ = get_distribution("stamp_processing").version
 except DistributionNotFound:
-    __version__ == "0.0.0"  # package is not installed
-    pass
+    __version__ = "0.0.0"  # package is not installed
 
 sys.path.append(str(YOLO_DIR))
 

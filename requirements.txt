@@ -1,0 +1,20 @@
+# Core dependencies
+gdown>=4.7.1
+Pillow>=10.0.0
+opencv-python>=4.8.0
+torch>=2.0.0
+torchvision>=0.15.0
+fastai>=2.7.0
+numpy>=1.21.0
+PyYAML>=6.0
+setuptools>=65.0.0
+
+# Development dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.0.0
+sphinx>=5.0.0
+twine>=4.0.0 

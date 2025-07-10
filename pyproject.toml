@@ -1,7 +1,7 @@
 [build-system]
 # These are the assumed default build requirements from pip:
 # https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
-requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=3.4"]
+requires = ["setuptools>=65", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [tool.black]
@@ -25,7 +25,7 @@ skip_gitignore = true
 virtual_env = "venv"
 
 [tool.mypy]
-python_version = 3.6
+python_version = "3.8"
 strict = true
 follow_imports = "skip"
 
@@ -44,7 +44,11 @@ module = [
     "numpy",
     "torch",
     "cv2",
-    "gdown"
+    "gdown",
+    "fastai",
+    "torchvision",
+    "PIL",
+    "yaml"
 ]
 ignore_missing_imports = true
 ignore_errors = true
